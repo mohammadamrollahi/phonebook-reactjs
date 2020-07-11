@@ -1,0 +1,30 @@
+    .HeaderContainer {
+        background-color: gainsboro;
+        width:100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        h2{
+            margin: 0px;
+            padding-left:30px ;
+            font-family: Comic Sans MS, Comic Sans, cursive;
+        }
+        input
+        {
+            width: 250px;
+            border-radius: 20px;
+            height:30px;
+            outline: 0;
+            border: none;
+            font-size: 16pt;
+            text-indent: 10px;
+            color: black;
+            font-family: Comic Sans MS, Comic Sans, cursive;
+        }
+        i{
+            color:black;
+            transform: translate(-30px);
+        }
+    }
