@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import './PhonbookContainerStyles.scss'
 import Header from '../Header/Header'
 import PersonsCard from "../PersonsCard/PersonsCard";
+import mySort from"./sortObjects"
 export default class PhonebookContainer extends Component {
   state = {
-    contacts: [
+    dcontacts: [
       { id: 1, name: "Mohammad", lastname: "Amrollahi", phone: "9125555", img: "" },
       { id: 2, name: "Alireza", lastname: "Akbari", phone: "91500000", img: "" },
       { id: 3, name: "Negar", lastname: "Mahdavi", phone: "9307376575", img: "" },
@@ -17,20 +18,23 @@ export default class PhonebookContainer extends Component {
       { id: 10, name: "arash", lastname: "Akbari", phone: "90200000", img: "" },
       { id: 11, name: "hossein", lastname: "Mahdavi", phone: "9607376575", img: "" },
       { id: 12, name: "matin", lastname: "Eshraghi", phone: "930376575", img: "" },
-    ]
-  }
+      ]
+      }
 
 
   render() {
-    const { contacts } = this.state
+    const { dcontacts } = this.state
+
+    let contacts=mySort(dcontacts)
     return (
       <div>
         <Header Contacts={contacts.map((item) => (item))} />
+        <div className="letters"></div>
+     
         {contacts.map((item) => (
           <PersonsCard key="item.id" Contacts={item} />
         ))}
-
-      </div>
+ </div>
     )
   }
 }
