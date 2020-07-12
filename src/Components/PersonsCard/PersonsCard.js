@@ -1,26 +1,20 @@
-import React, {Component} from 'react'
-export default class personsCard extends React.Component
-{
-    state={
-        contancts:[
-            {id:1,name:"mohammad",lastname:"amrollahi",phon:"9207376575"},
-            {id:2,name:"mohammad",lastname:"amrollahi",phon:"9207376575"},
-            {id:3,name:"mohammad",lastname:"amrollahi",phon:"9207376575"},
-            {id:4,name:"mohammad",lastname:"amrollahi",phon:"9207376575"}
-        ]
-    }
-    render()
-    {
-        const {contancts}=this.state
-        return(
+import React, { Component } from 'react'
+import "./PersonsCard.scss"
+export default class personsCard extends React.Component {
+
+    render() {
+        const { Contacts } = this.props
+        return (
             <div className="cardsContainer">
-                {contancts.map((item)=>(
-                    <div className="card">
-                        
+                <div className="card">
+                    <div className="imgdiv">
+                        <img className="contactImg" src={"https://api.adorable.io/avatars/50/Ali@adorable.png" + Contacts.id} />
                     </div>
-                )
-                
-                )}
+                    <div className="informationdiv">
+                        <p className="nameText">{Contacts.name + " " + Contacts.lastname}</p>
+                        <p className="phoneText">{Contacts.phone}</p>
+                    </div>
+                </div>
             </div>
         )
     }
