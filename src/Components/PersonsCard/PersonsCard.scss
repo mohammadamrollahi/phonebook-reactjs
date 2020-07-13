@@ -4,7 +4,7 @@
   align-items: flex-end;
   .card {
     width: 95%;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(230, 230, 230);
     height: 80px;
     display: flex;
     align-items: center;
@@ -15,6 +15,7 @@
       align-items: center;
       .contactImg {
         border-radius: 50%;
+        border: 2px solid rgb(0, 174, 255);
       }
     }
     .informationdiv{

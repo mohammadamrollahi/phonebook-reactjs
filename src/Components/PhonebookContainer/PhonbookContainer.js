@@ -6,8 +6,8 @@ import mySort from "./sortObjects"
 export default class PhonebookContainer extends Component {
   state = {
     dcontacts: [
-      { id: 1, name: "Mohammad", lastname: "Amrollahi", phone: "9124681237", img: "" },
-      { id: 2, name: "Alireza", lastname: "Akbari", phone: "9159463427", img: "" },
+      { id: 1, name: "Mohammad", lastname: "saberi", phone: "9124681237", img: "" },
+      { id: 2, name: "Alireza", lastname: "pashaei", phone: "9159463427", img: "" },
       { id: 3, name: "Negar", lastname: "Mahdavi", phone: "9303752067", img: "" },
       { id: 4, name: "Parviz", lastname: "bahrami", phone: "9206789203", img: "" },
       { id: 5, name: "reza", lastname: "amrollahi", phone: "9145492736", img: "" },
@@ -23,7 +23,7 @@ export default class PhonebookContainer extends Component {
       { id: 15, name: "reza", lastname: "vahidi", phone: "9307895013", img: "" },
       { id: 16, name: "nastaran", lastname: "zahraei", phone: "9302456078", img: "" },
       { id: 17, name: "korosh", lastname: "yadollahi", phone: "9301045795", img: "" },
-      { id: 17, name: "zahra", lastname: "asdollahi", phone: "9301045795", img: "" },
+      { id: 18, name: "zahra", lastname: "kamali", phone: "9301045795", img: "" },
     ]
   }
 
