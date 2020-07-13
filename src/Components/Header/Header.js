@@ -20,7 +20,7 @@ export default class Headers extends React.Component {
                 <div id="navbar">
                     <div className="search-div">
                         <i id="searchIcon" className="fas fa-search"></i>
-                        <input type="text" placeholder="search" name="search" className="searchInput" onChange={this.handleChange} />
+                        <input type="text" id="j"placeholder="search" name="search" className="searchInput" onChange={this.handleChange} />
                     </div>
                     <div className="navbarIcons-div">
                         <i id="navbarIcon" className="fas fa-bell"></i>
