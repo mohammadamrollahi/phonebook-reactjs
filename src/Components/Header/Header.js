@@ -14,7 +14,7 @@ export default class Headers extends React.Component {
     render() {
         const { search } = this.state
         const { Contacts } = this.props
-        let filterd = Contacts.filter(item => (item.name.toLowerCase().startsWith(search) || item.phone.startsWith(search)))
+        let filterd = Contacts.filter(item => (item.lastname.toLowerCase().startsWith(search) || item.phone.startsWith(search)))
         return (
             <>
                 <div id="navbar">
