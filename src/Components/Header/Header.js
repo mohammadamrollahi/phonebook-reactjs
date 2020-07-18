@@ -31,7 +31,7 @@ export default class Headers extends React.Component {
                     <div className="searchShow">
                         {this.state.search !== '' &&
                             filterd.map((item) => (
-                                <PersonsCard key={item.id} Contacts={item} />
+                                <PersonsCard key={item.id} Contacts={item}/>
                             ))}
                     </div>
                 </div>
