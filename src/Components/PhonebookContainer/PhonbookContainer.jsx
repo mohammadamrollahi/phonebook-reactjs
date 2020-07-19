@@ -49,7 +49,7 @@ const [modalUser,setmodalUser]=useState({})
       <>
       
       
-        <Header Contacts={dcontacts.map((item) => (item))} />
+        <Header Contacts={dcontacts.map((item) => (item))} showCardModal={showCardModal} />
         {alphabets.map((letter) => (
           <div className="alphabetDiv">
             <p className="alphabetP">{letter}</p>

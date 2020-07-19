@@ -28,7 +28,7 @@ const [search, setsearch] = useState("")
                     <div className="searchShow">
                         {search !== '' &&
                             filterd.map((item) => (
-                                <PersonsCard key={item.id} Contacts={item}/>
+                                <PersonsCard key={item.id} Contacts={item} showCardModal={()=>props.showCardModal(item)}/>
                             ))}
                     </div>
                 </div>
