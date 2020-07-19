@@ -1,0 +1,138 @@
+.modalDiv {
+    width: 400px;
+    height: 80vh;
+    background-color: rgb(241, 241, 241);
+
+    .header {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: white;
+
+        .closeicon {
+            font-size: 20pt;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+    }
+
+    .modalUserDiv {
+
+        height: 100px;
+        background-color: white;
+        .modalUserinnerDiv
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-left: 20px;
+            width:47%;
+            height: 100px;
+            .userImg
+            {
+                border: 3px solid rgb(0, 195, 255);
+            border-radius: 50%;
+            }
+
+        }
+       
+    }
+    .userphoneDiv
+    {
+        margin-top:20px;
+        margin-bottom: 10px;
+        height:70px;
+        background-color: white;
+        -webkit-box-shadow: 0px 0px 36px -16px rgba(184,184,184,1);
+        -moz-box-shadow: 0px 0px 36px -16px rgba(184,184,184,1);
+        box-shadow: 0px 0px 36px -16px rgba(184,184,184,1);
+        .userphoneinnerDiv
+        {
+            margin-left:8px;
+            width:35%;
+            display: flex;
+            height: 70px;
+            align-items: center;
+            justify-content: space-around;
+            .phonicon
+            {
+                font-size: 17pt;
+                color: rgb(169, 169, 169);
+            }
+        }
+
+    }
+    .useremailDiv{
+        background-color: white;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        -webkit-box-shadow: 0px 0px 36px -16px rgba(184,184,184,1);
+        -moz-box-shadow: 0px 0px 36px -16px rgba(184,184,184,1);
+        box-shadow: 0px 0px 36px -16px rgba(184,184,184,1);
+    .useremailinnerDiv
+    {
+        width: 90%;
+       height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .emailicon{
+            font-size: 17pt;
+            color: rgb(169, 169, 169);
+            padding-right: 15px;
+        }
+    }
+    }
+    .handlediv
+    {
+        -webkit-box-shadow: 0px 0px 36px -16px rgba(184,184,184,1);
+        -moz-box-shadow: 0px 0px 36px -16px rgba(184,184,184,1);
+        box-shadow: 0px 0px 36px -16px rgba(184,184,184,1);
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        margin-top: 110px;
+        display: flex;
+        justify-content: center;
+        .handleinnerdiv
+        {
+            width:50%;
+            display: flex;
+            justify-content: space-between;
+            .handleButton
+            {
+                width: 48%;
+                cursor: pointer;
+                transition: 0.2s box-shadow;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .handleicon
+                {
+                    font-size: 20pt;
+                    color: rgb(160, 160, 160);
+                }
+                .handletext
+                {
+                    margin:2px 0px;
+                }
+            }
+            .deleteButton
+            {
+                width: 48%;
+            
+            }
+        }
+        .handleButton:hover
+        {
+            -webkit-box-shadow: 0px 0px 23px -3px rgba(184,184,184,1);
+            -moz-box-shadow: 0px 0px 23px -3px rgba(184,184,184,1);
+            box-shadow: 0px 0px 23px -3px rgba(184,184,184,1);
+        }
+    }
+}

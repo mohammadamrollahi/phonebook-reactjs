@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "./PersonsCard.scss"
-import "./randomColor.js"
+import "./randomColor.jsx"
 export default function personsCard(props){
 
 
@@ -8,10 +8,10 @@ export default function personsCard(props){
         let randomColor = Math.floor(Math.random()*16777215).toString(16);
         return (
             <>
-            <div className="cardsContainer">
+            <div onClick={()=>props.showCardModal()}  className="cardsContainer" >
                 <div className="card">
                     <div className="imgdiv">  
-                        <img className="contactImg" src={"https://ui-avatars.com/api/?name=" + Contacts.name+"+"+Contacts.lastname+"&background="+randomColor+"&color=fff"+"&size=50"} />
+                        <img className="contactImg" src={Contacts.img} />
                     </div>
                     <div className="informationdiv">
                         <p className="nameText">{Contacts.name + " " + Contacts.lastname}</p>
@@ -19,6 +19,7 @@ export default function personsCard(props){
                     </div>
                 </div>
             </div>
+
             </>
         )
     
