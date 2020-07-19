@@ -22,6 +22,7 @@ export default function MyModal(props) {
         contentLabel="Minimal Modal Example"
         style={customStyles}>
           <div className="modalDiv">
+            <div>
             <div className="header">
               <p className="headertext">User information</p>
               <i onClick={()=>props.setshowModal(false)} className="fas fa-times closeicon"></i>
@@ -43,6 +44,7 @@ export default function MyModal(props) {
              <i class="fas fa-at emailicon"></i>
                <p className="emailText">{props.modalUser.email}</p>
                </div>
+             </div>
              </div>
              <div className="handlediv">
                <div className="handleinnerdiv">
