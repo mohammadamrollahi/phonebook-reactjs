@@ -1,22 +1,21 @@
-.letters
-{
-    width:5%; 
-    height:100vh;
+.letters {
+    width: 5%;
+    height: 100vh;
     position: fixed;
-    float:right;
+    float: right;
     background-color: red;
 }
-.alphabetDiv
-{
+
+.alphabetDiv {
     background-color: ghostwhite;
-    margin:10px 0px;
+    margin: 10px 0px;
 }
-.alphabetP
-{
+
+.alphabetP {
     font-size: 20pt;
     font-family: Andale Mono, monospace;
-    margin-left:40px;
+    margin-left: 40px;
     padding-top: 5px;
-    padding-bottom:5px;
+    padding-bottom: 5px;
     margin-top: 0;
 }

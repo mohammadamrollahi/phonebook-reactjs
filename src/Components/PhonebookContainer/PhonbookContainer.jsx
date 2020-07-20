@@ -3,7 +3,7 @@ import './PhonbookContainerStyles.scss'
 import Header from '../Header/Header'
 import PersonsCard from "../PersonsCard/PersonsCard";
 import MyModal from "../Modal/MyModal"
- 
+import AddContactModal from "../addContactModal/AddContactModal"
 export default function PhonebookContainer() 
 {
 const [dcontacts, setdcontacts] = useState([
@@ -26,13 +26,14 @@ const [dcontacts, setdcontacts] = useState([
   { id: 17, name: "korosh", lastname: "yadollahi", email:"mohammadamrollahi3@gmail.com", phone: "9301045795", img: "" },
   { id: 18, name: "zahra", lastname: "kamali", email:"mohammadamrollahi3@gmail.com", phone: "9301045795", img: "" },
 ])
-const setprofiletypographi=(dcontacts)=>{
-  let newdcontats=[...dcontacts]
-  newdcontats.map((item)=>{item["img"]="https://ui-avatars.com/api/?name=" + item.name+"+"+item.lastname+
-  "&background="+Math.floor(Math.random()*16777215).toString(16)+"&color=fff"+"&size=50"})
-  setdcontacts(newdcontats)
-}
+
 useEffect(() => {
+  const setprofiletypographi=(dcontacts)=>{
+    let newcontacts=[...dcontacts]
+    newcontacts.map((item)=>{item["img"]="https://ui-avatars.com/api/?name=" + item.name+"+"+item.lastname+
+    "&background="+Math.floor(Math.random()*16777215).toString(16)+"&color=fff"+"&size=50"})
+    setdcontacts(newcontacts)
+  }
 setprofiletypographi(dcontacts)
 
 }, [])
@@ -49,7 +50,7 @@ const [modalUser,setmodalUser]=useState({})
       <>
       
       
-        <Header Contacts={dcontacts.map((item) => (item))} showCardModal={showCardModal} />
+        <Header Contacts={dcontacts} showCardModal={showCardModal} />
         {alphabets.map((letter) => (
           <div className="alphabetDiv">
             <p className="alphabetP">{letter}</p>
@@ -61,6 +62,8 @@ const [modalUser,setmodalUser]=useState({})
             )}
           </div>
         ))}
-       <MyModal showModal={showModal} setshowModal={()=>setshowModal()} modalUser={modalUser} setmodalUser={()=>setmodalUser()}/>
+
+       <MyModal dcontacts={dcontacts} setdcontacts={setdcontacts} showModal={showModal} setshowModal={()=>setshowModal()} modalUser={modalUser} setmodalUser={()=>setmodalUser()}/>
+        <AddContactModal dcontacts={dcontacts} setdcontacts={setdcontacts}/>
       </>)}
       
