@@ -13,16 +13,26 @@ function AddContactModal(props) {
       .queue([
         {
           title: "name",
-          text: "edite contact name",
+          text: "contact name",
+          
         },
-        "lastname",
-        "number",
-        "email",
+        {
+          title: "lastname",
+          text: "contact lastname",
+        },
+        {
+          title: "number",
+          text: "contact number",
+        },
+        {
+          title: "email",
+          text: "contact email",
+        },
+
       ])
       .then((result) => {
         if (result.value) {
           let myanswers = result.value;
-
           props.setdcontacts([
             ...props.dcontacts,
             {
@@ -34,6 +44,7 @@ function AddContactModal(props) {
               img: "",
             },
           ]);
+          
           Swal.fire({
             title: "All done!",
             confirmButtonText: "Lovely!",

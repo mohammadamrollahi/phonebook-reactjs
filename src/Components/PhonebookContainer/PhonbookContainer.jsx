@@ -26,8 +26,7 @@ const [dcontacts, setdcontacts] = useState([
   { id: 17, name: "korosh", lastname: "yadollahi", email:"mohammadamrollahi3@gmail.com", phone: "9301045795", img: "" },
   { id: 18, name: "zahra", lastname: "kamali", email:"mohammadamrollahi3@gmail.com", phone: "9301045795", img: "" },
 ])
-
-useEffect(() => {
+const setimg=()=>{
   const setprofiletypographi=(dcontacts)=>{
     let newcontacts=[...dcontacts]
     newcontacts.map((item)=>{item["img"]="https://ui-avatars.com/api/?name=" + item.name+"+"+item.lastname+
@@ -35,6 +34,9 @@ useEffect(() => {
     setdcontacts(newcontacts)
   }
 setprofiletypographi(dcontacts)
+}
+useEffect(() => {
+setimg()
 
 }, [])
 
@@ -64,6 +66,6 @@ const [modalUser,setmodalUser]=useState({})
         ))}
 
        <MyModal dcontacts={dcontacts} setdcontacts={setdcontacts} showModal={showModal} setshowModal={()=>setshowModal()} modalUser={modalUser} setmodalUser={()=>setmodalUser()}/>
-        <AddContactModal dcontacts={dcontacts} setdcontacts={setdcontacts}/>
+        <AddContactModal dcontacts={dcontacts} setdcontacts={setdcontacts} setimg={setimg}/>
       </>)}
       

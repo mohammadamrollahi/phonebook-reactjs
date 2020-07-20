@@ -49,10 +49,23 @@ export default function MyModal(props) {
         {
           title: "name",
           text: "edite contact name",
+          inputValue:props.modalUser.name
         },
-        "lastname",
-        "number",
-        "email",
+        {
+          title: "lastname",
+          text: "edite contact lastname",
+          inputValue:props.modalUser.lastname
+        },
+        {
+          title: "number",
+          text: "edite contact number",
+          inputValue:props.modalUser.phone
+        },
+        {
+          title: "email",
+          text: "edite contact email",
+          inputValue:props.modalUser.email
+        }
       ])
       .then((result) => {
         if (result.value) {
@@ -69,9 +82,11 @@ export default function MyModal(props) {
               } else return item;
             }),
           ]);
+          
           Swal.fire({
-            title: "All done!",
-            confirmButtonText: "Lovely!",
+            title: "contact updated!",
+            confirmButtonText: "done!",
+
           });
         }
       });
@@ -134,3 +149,4 @@ export default function MyModal(props) {
     </Modal>
   );
 }
+
