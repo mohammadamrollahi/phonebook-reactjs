@@ -41,7 +41,8 @@ function AddContactModal(props) {
               lastname: myanswers[1],
               phone: myanswers[2],
               email: myanswers[3],
-              img: "",
+              img: "https://ui-avatars.com/api/?name=" +myanswers[0]+"+"+myanswers[1]+
+              "&background="+Math.floor(Math.random()*16777215).toString(16)+"&color=fff"+"&size=50",
             },
           ]);
           
