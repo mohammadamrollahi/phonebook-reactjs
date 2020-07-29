@@ -16,6 +16,7 @@ export default function Headers(props) {
       item.phone.startsWith(search) ||
       item.name.toLowerCase().startsWith(search)
   );
+
   return (
     <>
       <div id="navbar">
@@ -35,7 +36,7 @@ export default function Headers(props) {
           <i id="navbarIcon" className="fas fa-comment-alt"></i>
           <p className="navbarIcon-number">38</p>
         </div>
-        <div className="searchShow">
+        <div  className="searchShow">
           {search !== "" &&
             filterd.map((item) => (
               <PersonsCard
