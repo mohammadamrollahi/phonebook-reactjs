@@ -4,6 +4,7 @@ import Header from '../Header/Header'
 import PersonsCard from "../PersonsCard/PersonsCard";
 import MyModal from "../Modal/MyModal"
 import AddContactModal from "../addContactModal/AddContactModal"
+import RouterFooter from "../RouterFooter/RouterFooter"
 export default function PhonebookContainer() 
 {
 const [dcontacts, setdcontacts] = useState([
@@ -62,10 +63,12 @@ const [modalUser,setmodalUser]=useState({})
                 
               </>
             )}
+            
           </div>
         ))}
 
        <MyModal dcontacts={dcontacts} setdcontacts={setdcontacts} showModal={showModal} setshowModal={()=>setshowModal()} modalUser={modalUser} setmodalUser={()=>setmodalUser()}/>
         <AddContactModal dcontacts={dcontacts} setdcontacts={setdcontacts} setimg={setimg}/>
+        <RouterFooter/>
       </>)}
       
