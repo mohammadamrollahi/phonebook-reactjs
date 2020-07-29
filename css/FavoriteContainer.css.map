@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/Components/FavoritesContainer/FavoriteContainer.scss"
+    ],
+    "names": [],
+    "file": "FavoriteContainer.css"
+}

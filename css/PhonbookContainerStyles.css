@@ -1,0 +1,22 @@
+.letters {
+  width: 5%;
+  height: 100vh;
+  position: fixed;
+  float: right;
+  background-color: red;
+}
+
+.alphabetDiv {
+  background-color: ghostwhite;
+  margin: 10px 0px;
+}
+
+.alphabetP {
+  font-size: 20pt;
+  font-family: Andale Mono, monospace;
+  margin-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 0;
+}
+/*# sourceMappingURL=PhonbookContainerStyles.css.map */

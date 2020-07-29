@@ -1,0 +1,22 @@
+.footerdiv {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  box-shadow: 0px -4px 28px 0px #c7c7c7;
+  background-color: white;
+}
+
+.footerdiv .footerpart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+  height: 100%;
+  border-right: 0.2px solid #c4c4c4;
+  font-size: 22pt;
+  color: #878787;
+  cursor: pointer;
+}
+/*# sourceMappingURL=RouterFooter.css.map */

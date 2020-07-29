@@ -1,0 +1,60 @@
+.cardsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.3s background-color;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.cardsContainer .favoritesIcondiv {
+  width: 30px;
+  display: flex;
+  justify-content: start;
+}
+
+.cardsContainer .card {
+  width: 90%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 40px;
+}
+
+.cardsContainer .imgdiv {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardsContainer .imgdiv .contactImg {
+  border-radius: 50%;
+  border: 3px solid #00c3ff;
+}
+
+.cardsContainer .imgdiv .informationdiv {
+  width: 200px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cardsContainer .imgdiv .informationdiv .nameText {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  margin: 0;
+}
+
+.cardsContainer .imgdiv .informationdiv .phoneText {
+  color: gray;
+  letter-spacing: 7px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  margin: 0;
+}
+
+.cardsContainer:hover {
+  background-color: gainsboro;
+}
+/*# sourceMappingURL=PersonsCard.css.map */
